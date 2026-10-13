@@ -1,0 +1,184 @@
+.loginFormPanel {
+	min-width: 0;
+	padding: 0 0 3px;
+	animation: revealLoginFormPanel 650ms 100ms ease-out both;
+}
+
+.loginTitle {
+	margin: 0 0 clamp(38px, 7vh, 66px);
+	color: var(--textColor);
+	font: 500 20px/1.2 var(--sansFont);
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.loginIntro {
+	max-width: 320px;
+	margin: 0 auto 34px;
+	color: var(--mutedColor);
+	font: 13px/1.45 var(--sansFont);
+	text-align: center;
+}
+
+.loginForm {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.loginField {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.loginLabel {
+	padding-left: 12px;
+	color: var(--textColor);
+	font: 600 13px/1.2 var(--sansFont);
+}
+
+.loginInput {
+	width: 100%;
+	min-width: 0;
+	height: 38px;
+	padding: 0 16px;
+	border: 1px solid transparent;
+	border-radius: 999px;
+	outline: none;
+	background: #fff;
+	color: var(--textColor);
+	font: 13px var(--sansFont);
+	text-align: start;
+	transition:
+		border-color 160ms ease,
+		box-shadow 160ms ease;
+
+	&::placeholder {
+		color: #aec7c8;
+		opacity: 1;
+	}
+
+	&:focus-visible {
+		border-color: var(--greenColor);
+		box-shadow: 0 0 0 3px rgb(17 173 103 / 14%);
+	}
+}
+
+.forgotPassword {
+	align-self: flex-start;
+	margin: 1px 0 22px 12px;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--textColor);
+	font: 13px var(--sansFont);
+	cursor: pointer;
+}
+
+.loginSubmit {
+	min-height: 40px;
+	border: 0;
+	border-radius: 999px;
+	background: var(--mintColor);
+	color: var(--textColor);
+	font: 14px var(--sansFont);
+	cursor: pointer;
+	transition:
+		background-color 160ms ease,
+		transform 160ms ease;
+
+	&:hover {
+		background: #b7e8cc;
+		transform: translateY(-1px);
+	}
+}
+
+.loginSubmit:focus-visible,
+.forgotPassword:focus-visible,
+.signupLink:focus-visible {
+	outline: 2px solid var(--greenColor);
+	outline-offset: 3px;
+}
+
+.formDivider {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin: 42px 14px 52px;
+	color: var(--textColor);
+	font: 12px var(--sansFont);
+
+	&::before,
+	&::after {
+		flex: 1;
+		height: 1px;
+		background: var(--greenColor);
+		content: "";
+	}
+}
+
+.signupLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	width: 100%;
+	min-height: 42px;
+	padding: 0 18px;
+	border: 0;
+	border-radius: 999px;
+	background: #fff;
+	color: var(--textColor);
+	font: 13px var(--sansFont);
+	cursor: pointer;
+	transition: box-shadow 160ms ease;
+
+	&:hover {
+		box-shadow: 0 5px 18px rgb(23 109 117 / 9%);
+	}
+}
+
+.signupArrow {
+	color: var(--greenColor);
+	font-size: 21px;
+	line-height: 1;
+}
+
+@keyframes revealLoginFormPanel {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+ .loginFormPanel {
+         min-width: 0;
+         padding: 0 0 3px;
+         animation: revealLoginFormPanel 650ms 100ms ease-out both;
+         position: relative;
+       }
+	.loginTitle {
+		margin-bottom: 30px;
+	}
+
+	.loginIntro {
+		margin-bottom: 26px;
+	}
+
+	.formDivider {
+		margin: 30px 14px;
+	}
+.mountainLines {
+  position: absolute;
+  width: 140px;
+  bottom: 20px;
+  right: 20px;
+  height: auto;
+  pointer-events: none;
+}
+
